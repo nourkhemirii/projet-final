@@ -4,52 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap"  rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/e3e44d1850.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit:ital,wght@1,500&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <title>La Gourmande</title>
 </head>
 
 <body>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <div class="navbar">
     <div class="nav"> 
-      <h1>Delicio</h1>
-      <h6>Vos meilleurs gateaux</h6>
-      
+      <h1 id="log" >Delicio</h1>
     </div>
     <div class="bar">
+      
       <ul>
         <li id="home">
           Home
         </li>
         <li id="carte">
-          Carte
+          Menu
         </li>
         <li id="about">
           About us
         </li>
+        <li style="margin-right:0px ;" id="shops">Shops
+          <select id="boutique">
+          <option value="menzah">menzah</option>
+          <option value="marsa">marsa</option>
+          <option value="manar">manar</option>
+          <option value="megrin">megrin</option>
+          <option value="megrin">bardoo</option>
+          <option value="megrin">aouina</option>
+          <option value="megrin">centre urbain</option>
+          <option value="megrin">lac2</option>
+          <option value="megrin">sidi bousaid</option>
+        </select>
+      </li>
       </ul>
       <i class="fa-solid fa-basket-shopping"></i>
-      Mon Panier
+      My blanket
       <i class="fa-solid fa-laptop"></i>
-        <a href="compte.html" style="text-decoration:none;"> Mon compte</a>
+        <a href="compte.html" style= "color: #bc6c25;" id="compte"> My account</a>
 
     </div>
   </div>
+  <div class="slider">
+<img src="" alt="">
+  </div>
   <!-- end navbar -->
  
-  <!-- background slider -->
-  <!--  -->
+  <!-- background slider
+  
   <div class="container">
   <div class="sliderr">
     <div class="slide">
-      <img src="images/bg2.jpg" alt="">
+      <img src="images/1bg1.jpg" alt="">
     </div>
     <div class="slide">
-      <img src="images/bg1.jpg" alt="">
+      <img src="images/2bg2.jpg" alt="">
     </div> 
   </div>
   <div class="fleche">
@@ -65,189 +87,373 @@
   <div class="indicator "></div>
 </div>
 </div>
-
+ -->
 
   <!-- background -->
+  <div data-aos="fade-right">
+    <h1 id="h1">Nos Masterclass</h1>
+  </div>
+  <div data-aos="flip-down">
 
   <div class="masterclass">
-    <h1>Nos Masterclass</h1>
-    <br>
-    <div class="class">
-    <div class="master">
-      <div id="class" style="background-color: #FAF0E6		;">
-        <img src="images/masterclass3.jpg" alt="">
-            <h2>Masterclass Sushi</h2>
-            <i class="fa-solid fa-calendar-days"></i>
-            18-06-22
-            <br>
-           <button>Learn More</button>
-       </div>
+    <div class="class" style="margin-top: 4px;">
+      <img src="images/masterclass3.jpg" alt="">
+      <h4>Masterclass sushi</h4>
+      <i class="fa-solid fa-calendar-days"></i>
+     09/05/22
+     <p>80.000D</p>  
+      <button>Ajouter au panier</button>
+     </div>
+    <div class="class"  style="margin-top: 18px;">
+      <img src="images/masterclass1.jpg" alt="">
+      <h4>Masterclass sushi</h4>
+      <i class="fa-solid fa-calendar-days"></i>
+      11/08/22
+      <p>150.000D</p>
+    
+  <button>Ajouter au panier</button>
+
     </div>
-    <div class="master">
-      <div id="class">
-        <img src="images/masterclass1.jpg" alt="">
-            <h2>Masterclass Sushi</h2>
-            <i class="fa-solid fa-calendar-days"></i>
-            18-06-22
-            <br>
-           <button>Learn More</button>
+
+    <div class="class" style="margin-top: 37px;">
+      <img src="images/masterclass2.jpg" alt="">
+      <h4>Masterclass ParisBreast</h4>
+      <i class="fa-solid fa-calendar-days"></i>
+      15/0/22
+      <p>120.000D</p>
+  
+        <button>Ajouter au panier</button>
        </div>
+    <div class="class" style="margin-top: 52px;">
+      <img src="images/masterclass1.jpg" alt="">
+      <h4>Masterclass Sushi</h4>
+      <i class="fa-solid fa-calendar-days"></i>
+      15/0/22
+      <p>120.000D</p>  
+        <button>Ajouter au panier</button>
     </div>
-    <div class="master">
-      <div id="class" style="background-color:#dfcedf ;">
-        <img src="images/masterclass2.jpg" alt="">
-            <h2>Masterclass Sushi</h2>
-            <i class="fa-solid fa-calendar-days"></i>
-            18-06-22
-            <br>
-           <button>Learn More</button>
-       </div>
-    </div>
+
   </div>
-  </div>
-  <h1> Venez deguster nos dejeuner</h1>
+</div>
+  <div data-aos="fade-right">
+  <h1 id="h1"> Venez deguster nos dejeuner</h1>
+</div>
 <!--  -->
+<div data-aos="flip-left">
+
   <div class="dejeuner">
     <div class="slider2"></div>
     <div class="dej">
-     <img src="images/dejeuner.jpg" alt="">
+      <h1>Meilleurs déjeuner chez Delicio</h1>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque velit nam ullam sed minima. Obcaecati ipsum, libero consequuntur laborum soluta facere dolorem saepe, 
+  perspiciatis aut recusandae sunt facilis mollitia cupiditate?</p>  
+  <div class="accordion" id="accordionPanelsStayOpenExample" >
+    <div class="accordion-item"  style="  border: 0.3px solid #606c38;">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button style="  background-color: #fefae0;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+         Pause Déjeuner 
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          Notre pause dejenuer a 13h contient une entrée simple un sandwich froid/ ou pizza <br> ainsi qu'un dessert au choix .      
+          </div>
+      </div>
     </div>
-  </div>
+    <div class="accordion-item"  style="  border: 0.3px solid #606c38;">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button style="  background-color: #fefae0;"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+Tea Time      
+  </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          Notre pause café a 15h dispose d'un café turc/ ou thé infusion avec nos bouchées Sucrées      
+            </div>
+      </div>
+    </div>
+
+  </div> 
+</div> 
+</div>
+</div>
   <!--  -->
   <div class="titre">
-    <h1>Nos sallées variées</h1>
-
+    <div data-aos="fade-right">
+    <h1 id="h1">Nos Bouchées Salées</h1>
   </div>
-
+  </div>
+  <div data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine">
   <div class="salees">
-    <div class="salee" id="cover">
+    <div class="saleehvr" id="cover">
       <img src="images/sale1.jpg" alt="">
       <div class="txt">Nos sallées variés</div>
     </div>
 
-    <div class="salee">
-      <img src="images/sale2.jpg" alt="" >
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/sale2.jpg" alt="" >
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Le libanais</h6>
       <p>2.5dt</p>
+     
     </div>
 
-    <div class="salee">
-      <img src="images/sale3.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/sale3.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Sandwich soirée</h6>
       <p>1.9dt</p>
     </div>
-    <div class="salee">
-      <img src="images/sale4.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/sale4.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Mini fricassée</h6>
       <p>1.9dt</p>
     </div>
-    <div class="salee">
-      <img src="images/sale6.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/sale6.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Pincette poulet</h6>
-      <p>3.2dt</p>    </div>
-    <div class="salee">
-      <img src="images/sale9.jpg" alt="" >
+      <p>3.2dt</p> 
+      </div>
+
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/sale9.jpg" alt="" >
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Brika melha</h6>
-      <p>2.1dt</p>    </div>
-    <div class="salee">
-      <img src="images/sale7.jpg" alt="">
-      <h6>Doight de fée</h6>
-      <p>3.9dt</p>    </div>
-    <div class="salee">
-      <img src="images/sale8.jpg" alt="">
-      <h6>Carré thon</h6>
-      <p>6.9dt</p>    </div>
-    <div class="salee">
-      <img src="images/sale1.jpg" alt="">
-      <h6>Blinkis saumon</h6>
-      <p>7.9dt</p>    </div>
-    <div class="salee">
-      <img src="images/sale10.jpg" alt="">
-      <h6>Pizza</h6>
-      <p>6.9dt</p>   
+      <p>2.1dt</p>  
     </div>
-    <div class="salee">
-      <img src="images/sale10.jpg" alt="">
-      <h6>Pizza</h6>
-      <p>6.9dt</p>   
-    </div>
-    <div class="salee">
-      <img src="images/sale10.jpg" alt="">
-      <h6>Pizza</h6>
-      <p>6.9dt</p>   
-    </div>
+ 
     
   </div>
+</div>
+    <div data-aos="fade-right">
 
   <div class="titre">
-    <h1>Nos sallées variées</h1>
-
+    <h1 id="h1">Nos Bouchées Sucrées</h1>
   </div>
+</div>
 
+<div data-aos="fade-left"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
   <div class="salees">
-    <div class="salee" id="cover">
+    <div class="saleehvr" id="cover">
       <img src="images/suc1.jpg" alt="">
-      <div class="txt">Nos sallées variés</div>
+      <div class="txt">Nos Sucrées variés</div>
     </div>
 
-    <div class="salee">
-      <img class="image" src="images/suc12.jpg" alt="" >
+    <div class="saleehvr">
+      <div class="card">
+        <img class="image" src="images/suc12.jpg" alt="" >
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6  style="text-align: center;">Palette</h6>
       <p style="text-align: center;">87dt</p>
-      <button class="btn">Ajouter au Panier</button>
     </div>
     
 
-    <div class="salee">
-      <img src="images/suc3.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/suc3.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Chouquette caramel</h6>
       <p>59dt</p>
     </div>
-    <div class="salee">
-      <img src="images/suc7.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/suc7.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Carrot cake</h6>
       <p>7.9dt</p>
     </div>
-    <div class="salee">
-      <img src="images/suc9.jpg" alt="">
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/suc9.jpg" alt="">
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
       <h6>Paris breast</h6>
       <p>7.3dt</p>    </div>
-    <div class="salee">
-      <img src="images/suc6.jpg" alt="" >
-      <h6>Broownie caramel</h6>
-      <p>7.4dt</p>    </div>
-      <div class="salee">
-        <img src="images/suc6.jpg" alt="" >
-        <h6>Broownie caramel</h6>
-        <p>7.4dt</p>    </div>
-        <div class="salee">
-          <img src="images/suc6.jpg" alt="" >
-          <h6>Broownie caramel</h6>
-          <p>7.4dt</p> 
-           </div>
-    <div class="salee">
-      <img src="images/suc8.jpg" alt="">
-      <h6>Tarte Chocolat</h6>
-      <p>6.2dt</p>    </div>
-    <div class="salee">
-      <img src="images/suc5.jpg" alt="">
-      <h6>Chesse cake tiramisu</h6>
-      <p>81dt</p>    </div>
-    <div class="salee">
-      <img src="images/suc10.jpg" alt="">
-      <h6>Fondant praliné</h6>
-      <p>8.9dt</p>    </div>
-    <div class="salee">
-      <img src="images/suc11.jpg" alt="">
-      <h6>Cookie gourmad</h6>
-      <p>4.9dt</p>    </div>
-
+    <div class="saleehvr">
+      <div class="card">
+        <img src="images/suc2.jpg" alt="" >
+        <div class="overlay">
+          <button class="btn"> ajouter </button>
+        </div>
+      </div>
+      <div id="price">
+      <h6>Pralin</h6>
+      <p>8.4dt</p>  
+    </div>
+    </div>
   </div>
 </div>
-<!-- A propos -->
-<div class="play">
-ggg
+
+  <div class="titre">
+    <h1 id="h1">Notre Equipe</h1>
+
+  </div>
+  <div data-aos="zoom-out-right">
+
+  <div class="avatars">
+    <div class="avatar">
+      <img src="images/chef6.jpg" alt="" />
+      <h3>CHEF NESRINE
+      </h3>
+      <h2>Spécialité Salées</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      </p>
+      <button>CONTACT</button>
+    </div>  
+
+    <div class="avatar">
+      <img src="images/chef1.jpg" alt="" />
+      <h3>CHEF AHMED</h3>
+      <h2>Spécialité Sucrées</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      </p>
+      <button>CONTACT</button>
+    </div>
+
+    <div class="avatar">
+      <img src="images/chef3.jpg" alt="" />
+      <h3>CHEF MAHDI</h3>
+      <h2>Responsable Masterclass</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      </p>
+      <button>CONTACT</button>
+    </div>
+    <div class="avatar">
+      <img src="images/chef7.jpg" alt="" />
+      <h3>CHEF AZIZ</h3>
+      <h2>Spécialité pieces montees</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      </p>
+      <button>CONTACT</button>
+    </div>
+  </div>
+</div>
+<hr style="margin: 20px;">
+
+<div class="localisation">
+  <div class="overlay-bg"> </div>
+    <img src="images/map.jpg" alt="">
+    <div class="loc">
+        <h1 style="font-size: 27px;">
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+          where to find us </h1> 
+        <hr width="50%"><hr width="60%">
+       <p> Our new pastry is based just outside of newcastle city centre.</p>
+       <div class="infos">
+      <div class="adress">
+        <h3> 
+          <i class="fa-solid fa-location-crosshairs"  style="color: #606c38;"></i>
+          Adress</h3>
+        unit 17,
+        <br>
+       quary level
+       <br> st peters , 
+       <br>newcastle upon time 
+      </div>
+      <div class="info">
+        <h3> <i class="fa-solid fa-phone" style="color: #606c38;"></i>
+          Telephone</h3>
+        tel +216 55 272 241
+        <br>
+        Fix 71 300 000 
+        <h3> <i class="fa-solid fa-envelope-open-text"  style="color: #606c38;"></i>
+          Email</h3>
+        Delicio@gmail.com
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact">
+  <h1>
+    Send us message
+  </h1>
+  <hr>
+  <form class="form">
+    <input type="text" name="Name" placeholder="Your Name" style="width:40% ;">
+    <input type="text" name="Name" placeholder="Your Name" style="width:40% ;">
+    <input type="text" name="email" placeholder="Your Email" style="width:40% ;">
+    
+    <span class="error"></span>
+    <input type="text" name="telephone" placeholder="Your number" style="width:40% ;">  <br>
+    <input type="text" name="Comments" placeholder="Your opinion" style="width:50% ; padding:45px 2px; text-align:left;" > <br>
+    <button type="">Attach file</button> <br>
+    <button type="">Send message</button>
+  </form>
 </div>
 
+
+  <div class="footer">
+<div class="contacter">
+  <h3>Contact us</h3>  
+  Adress</h3>
+unit 17,
+<br>
+quary level
+<br> st peters , 
+<br>newcastle upon time 
+</div>
+<div class="follow">
+<h3>Follow us</h3>  
+<i class="fa-brands fa-facebook" style="color: blue;"></i>
+  facebook
+  <br>
+  <i class="fa-brands fa-instagram" style="color: purple;"></i>
+  Instagram  <br>
+  <i class="fa-brands fa-dribbble" style="color: rgb(221, 45, 104);"></i>
+  Dribbble <br>
+  <i class="fa-brands fa-square-twitter" style="color: rgba(77, 180, 211, 0.733);"></i>
+  Twitter <br>
+  <i class="fa-brands fa-google-plus" style="color:orange;"></i>
+  Google+ <br>
+</div>
+<div class="message">
+  <h3>Contact us</h3>  
+  <p>Interested in working with us on your next web design project?</p>
+  <button>Get in touch</button>
+</div>
+  </div>
+
+ 
 </body>
 </html>

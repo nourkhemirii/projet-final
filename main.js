@@ -1,55 +1,50 @@
-let slides = document.querySelectorAll(".slide");
-        let indicators = document.querySelectorAll(".indicator");
-
-        //initaliser le slide a 0
-        slides.forEach(slide=>{
-            slide.style.display="none"
-        })
-        
-        indicators.forEach(function(indicator){
-            indicator.style.background="white"
-        })
-
-        slides[0].style.display = "block";
-            indicators[0].style.background = "black";
-        let index = 0
-        setInterval(()=>{
-            slides[index].style.display = "none";
-            indicators[index].style.background = "white";
-            console.log(index)
-            if(index +1 >= slides.length){
-                index = 0;
-            }else{
-                index++;
-            }
-            slides[index].style.display = "block";
-            indicators[index].style.background = "black";
-            
-        },3000)
-        
-        document.querySelector(".right").onclick = ()=>{
-            slides[index].style.display = "none";
-            indicators[index].style.background = "white";
-            console.log(index)
-            if(index +1 >= slides.length){
-                index = 0;
-            }else{
-                index++;
-            }
-            slides[index].style.display = "block";
-            indicators[index].style.background = "black";
-        }
-        document.querySelector(".left").onclick = ()=>{
-            slides[index].style.display = "none";
-            indicators[index].style.background = "white";
-            console.log(index)
-            if(index - 1 < 0){
-                index = slides.length -1;
-            }else{
-                index--;
-            }
-            slides[index].style.display = "block";
-            indicators[index].style.background = "black";
-        }
-
-        console.log(slides)
+function validateForm()                                    
+{ 
+    var name = document.forms["myForm"]["name"];               
+    var email = document.forms["myForm"]["email"];    
+    var message = document.forms["myForm"]["message"];   
+   
+    if (name.value == "")                                  
+    { 
+        document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
+        name.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errorname').innerHTML="";  
+    }
+       
+    if (email.value == "")                                   
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    }else{
+        document.getElementById('erroremail').innerHTML="";  
+    }
+    
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (message.value == "")                           
+    {
+        document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
+        message.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errormsg').innerHTML="";  
+    }
+   
+    return true; 
+}

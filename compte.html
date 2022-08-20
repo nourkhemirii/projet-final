@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap"  rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/e3e44d1850.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .client{
+            background-color: #ccd5ae;
+            width: 50vw;
+            margin-right: 10px;
+           margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .pasclient{
+            background-color: #ccd5ae;
+            width: 50vw;
+            margin-top: 40px;
+
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        h1{
+  margin: 20px 5px 0 0 ;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #A0522D;
+}
+h2{
+    text-align: center;
+    color: #A0522D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 5px 0 0 ;
+
+}
+form{
+    margin: 10px;
+    padding: 6px;
+    
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+button{
+    width: 40%;
+    text-align: center;
+   margin:40px ;
+}
+h1{
+  text-align: center;
+}
+.form-style {
+  margin:10px auto;
+  width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style td {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.form-style label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  font-weight: bold;
+}
+.form-style .required{
+  color:red;
+}
+.form-style input[type=submit], .form-style input[type=reset]{
+  background: #606c38;
+  padding: 8px 15px 8px 15px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
+  background: #A0522D ;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+}
+.form-style .field-textarea{
+  height: 100px;
+}
+.form-style input[type=text], 
+.form-style input[type=email],
+textarea{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin:0px;
+  outline: none;  
+}
+.form-style .long{
+  width: 100%;
+}
+.form-style input[type=text]:focus, 
+.form-style input[type=email]:focus,
+.form-style textarea:focus{
+  -moz-box-shadow: 0 0 8px #88D5E9;
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+  box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+.error{
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+.form{
+   display: flex;
+   width: 100%;
+}
+.navbar{
+  width: 100%;
+  display:  flex;
+  flex-wrap: wrap;
+  background-color: #fefae0;
+}
+#boutique{
+background-color: #fefae0;
+color: #d4a373;
+border-radius: 5px;
+margin-left:0px;
+border: 2px solid #d4a373 ;
+}
+#log{
+  margin: 9px;
+  display: flex;
+}
+ul{
+  display: flex;
+  gap: 30px;
+}
+li{
+  list-style: none;
+
+}
+.bar{
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+  color: #bc6c25;
+
+}
+#home:hover{
+  color: #606c38;
+}
+
+#carte:hover{
+  color: #606c38;
+}
+
+#about:hover{
+  color: #606c38;
+}
+
+#boutique :hover{
+  color: #606c38;
+}
+#shops:hover{
+  color: #606c38;
+}
+#compte:hover{
+  color: #606c38;
+}
+.footer{
+  display: flex;
+  gap: 35px;
+  background-color: #faf5d3;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.footer h3{
+  color: #bc6c25;
+  font-size: 18px;
+}
+.message button{
+  border-radius:4px ;
+  padding: 2px 7px;
+  border:1px solid #606c38;
+  background-color: #f8f4d6;
+}
+.message button:hover{
+background-color: #606c38;
+color: #f8f4d6;
+}
+</style>
+</head>
+<body>
+   <div class="navbar">
+      <div class="nav"> 
+        <h1 id="log" >Delicio</h1>
+      </div>
+      <div class="bar">
+        
+        <ul>
+          <li id="home">
+            Home
+          </li>
+          <li id="carte">
+            Menu
+          </li>
+          <li id="about">
+            About us
+          </li>
+          <li style="margin-right:0px ;" id="shops">Shops
+            <select id="boutique">
+            <option value="menzah">menzah</option>
+            <option value="marsa">marsa</option>
+            <option value="manar">manar</option>
+            <option value="megrin">megrin</option>
+            <option value="megrin">bardoo</option>
+            <option value="megrin">aouina</option>
+            <option value="megrin">centre urbain</option>
+            <option value="megrin">lac2</option>
+            <option value="megrin">sidi bousaid</option>
+          </select>
+        </li>
+        </ul>
+        <i class="fa-solid fa-basket-shopping"></i>
+        My blanket
+        <i class="fa-solid fa-laptop"></i>
+          <a href="compte.html" style= "color: #bc6c25;" id="compte"> My account</a>
+  
+      </div>
+    </div>
+   <div class="form">
+    
+   <div class="client">
+        <h1>Deja client</h1>
+    <form  method="post" action="">
+        Nom d'utilisateur <input type="text" placeholder="Saisir ID"> <br>
+        Mot de passe <input type="text" placeholder="Saisir MDP">
+        <br>
+        <button>Connexion</button>
+    </form>
+
+    </div>
+
+    <div class="pasclient">
+      <h1>Formulaire de contact</h1>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+              <td>
+                 <label>
+                    Votre prenom <span class="required">*</span>
+                 </label>
+              </td>
+              
+              <td>
+                 <input type="text" name="name" class="long"/>
+                 <span class="error" id="errorname"></span>
+              </td>
+           </tr>
+           <tr>
+            <td>
+               <label>
+                  Votre ID <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <input type="text" name="name" class="long"/>
+               <span class="error" id="errorname"></span>
+            </td>
+         </tr>
+
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+     
+  </div>
+</div>
+<div class="footer">
+  <div class="contacter">
+    <h3>Contact us</h3>  
+    Adress</h3>
+  unit 17,
+  <br>
+  quary level
+  <br> st peters , 
+  <br>newcastle upon time 
+  </div>
+  <div class="follow">
+  <h3>Follow us</h3>  
+  <i class="fa-brands fa-facebook" style="color: blue;"></i>
+    facebook
+    <br>
+    <i class="fa-brands fa-instagram" style="color: purple;"></i>
+    Instagram  <br>
+    <i class="fa-brands fa-dribbble" style="color: rgb(221, 45, 104);"></i>
+    Dribbble <br>
+    <i class="fa-brands fa-square-twitter" style="color: rgba(77, 180, 211, 0.733);"></i>
+    Twitter <br>
+    <i class="fa-brands fa-google-plus" style="color:orange;"></i>
+    Google+ <br>
+  </div>
+  <div class="message">
+    <h3>Contact us</h3>  
+    <p>Interested in working with us on your next web design project?</p>
+    <button>Get in touch</button>
+  </div>
+    </div>
+  
+</body>
+</html>
